@@ -1,0 +1,32 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@inject NavigationManager navMgr
+@inject Person person
+@code {
+    protected override void OnInitialized()
+    {
+        person.P0 = @"テスト";
+        person.P1 = @"テスト1";
+        person.P2 = @"テスト2";
+    }
+
+    // TODO プリント画面に遷移
+    void OnPrint()
+    {
+        navMgr.NavigateTo("/Print");
+    }
+
+    // TODO 帳票情報をサーバーにアップロードする画面に遷移
+    void RegisterEntryInfo()
+    {
+        navMgr.NavigateTo("/Register");
+    }
+}

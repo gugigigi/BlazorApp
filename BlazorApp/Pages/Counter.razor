@@ -1,0 +1,38 @@
+﻿@page "/counter"
+@using BlazorApp1.SQL
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<button class="btn btn-primary" @onclick="SelectFromPostgreSQL">Select from PostgreSQL</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private void SelectFromPostgreSQL()
+    {
+        try
+        {
+            var codeList = new List<string>();
+            codeList.Add("code1");
+            codeList.Add("code2");
+
+            var contractList = Contract.SelectContract(codeList);
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+    }
+
+}
