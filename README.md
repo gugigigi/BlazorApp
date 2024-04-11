@@ -28,9 +28,11 @@ https://blog.unikktle.com/blazor-server%e3%81%8b%e3%82%89-postgresql%e3%81%b8sql
 環境構築
 ターミナルから、以下のコマンドを叩いてDockerを構築・起動
 
+/*
 ：Blazorappの起動
 docker build -t blazorappcontainer . --no-cache
 docker run --rm -p 8080:8080 --name blazorappcontainer blazorappcontainer
+*/
 
 ：Postgresのコンテナ起動
     docker compose up -d
@@ -38,6 +40,8 @@ docker run --rm -p 8080:8080 --name blazorappcontainer blazorappcontainer
     docker exec -it postgres bash
 :Docker接続 -> psqlに接続する
     root@a8834891645b:/# psql -U user
+
+VisualStudioからIIS EXPRESSを起動
 
 ：デモ用のテーブルの作成
 ================================================================================
@@ -64,7 +68,7 @@ test_db=# SELECT * FROM m_table_a;
 ================================================================================
 
 ================================================================================
-#ボトルネックメモ -- Mac環境では構築が難しい箇所があったので追記しております。
+#ボトルネック -- Mac環境では構築が難しい箇所があったので追記しております。
 
 現在、Mac + Postgre環境でのログイン機能を実装する作業において問題があります。
 以下のサイトを参考にログイン機能を実装させたかったのですが
@@ -80,9 +84,12 @@ Mac準拠の VisualStudio for Mac はサービス終了に伴い .Net8.0 が使�
 ※単に余計な調査のコストがかかってしまう。
 なので、以降はWindows機で作業を推奨します。
 
-・
-・
-・
-・
+================================================================================
+
+================================================================================
+帳票機能実装にあたっての課題点
+ボタン押下後のページ遷移は BlazorServerだとうまく遷移できませんでした .NavigateTo("/~",true,false); を設定し
+あらかじめforceLoadを true変え 回避させています。
+※BlazorWebAssenblyでは通常通り遷移可能のようでした。
 
 ================================================================================
