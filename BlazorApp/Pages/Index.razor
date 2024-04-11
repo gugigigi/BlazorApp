@@ -1,32 +1,97 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
-
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
-
 @inject NavigationManager navMgr
 @inject Person person
+
+<div class="container-field">
+    <h2>名刺印刷アプリ</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="form-group">
+                    <label for="">会社名</label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12" for="">氏名(ふりがな)</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P1"
+                            @bind-value:event="oninput"></input>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P2"
+                            @bind-value:event="oninput"></input>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12" for="">氏名(漢字)</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P3"
+                            @bind-value:event="oninput"></input>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P4"
+                            @bind-value:event="oninput"></input>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="">連絡先</label>
+                    <div class="col-6">
+                    </div>
+                </div>
+                <div class="float-right">
+                    <button class="btn btn-primary" style="width:100px;margin-right:15px"
+                        @onclick="OnPrint">印　刷</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <table class="preview">
+                <tbody>
+                    <tr>
+                        <td id="origin">
+                            <img class="logo" alt="" src="logo.png" />
+                            <p class="section" style="@person.GetSectionStyle()">@person.P0_2</p>
+                            <div class="Name" style="@person.GetNameStyle()">
+                                <div style="float:left; margin-right:5mm">
+                                    <p class="FirstKana">@person.P1</p>
+                                    <p class="KanaSpan" />
+                                    <p class="FirstName">@person.P3</p>
+                                </div>
+                                <div style="float:left">
+                                    <p class="LastKana">@person.P2</p>
+                                    <p class="KanaSpan" />
+                                    <p class="LastName">@person.P4</p>
+                                </div>
+                            </div>
+                            <p class="address">@person.P5_2</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
 @code {
     protected override void OnInitialized()
     {
-        person.P0 = @"テスト";
         person.P1 = @"テスト1";
         person.P2 = @"テスト2";
+        person.P3 = @"テスト3";
+        person.P4 = @"テスト4";
+        person.P5 = @"テスト5";
     }
 
     // TODO プリント画面に遷移
     void OnPrint()
     {
-        navMgr.NavigateTo("/Print");
+        navMgr.NavigateTo("/print");
     }
 
     // TODO 帳票情報をサーバーにアップロードする画面に遷移
-    void RegisterEntryInfo()
-    {
-        navMgr.NavigateTo("/Register");
-    }
+    //void RegisterEntryInfo()
+    // {
+    // navMgr.NavigateTo("/Register");
+    // }
 }

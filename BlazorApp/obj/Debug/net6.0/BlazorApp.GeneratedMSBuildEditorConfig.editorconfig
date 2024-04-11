@@ -9,55 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BlazorApp
 build_property.RootNamespace = BlazorApp
-build_property.ProjectDir = /Users/setoshin/Downloads/BlazorApp/BlazorApp/
+build_property.ProjectDir = C:\Project\Markup\BlazorApp\BlazorApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/setoshin/Downloads/BlazorApp/BlazorApp
+build_property.MSBuildProjectDirectory = C:\Project\Markup\BlazorApp\BlazorApp
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/App.razor]
+[C:/Project/Markup/BlazorApp/BlazorApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/Print.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/_Imports.razor]
+[C:/Project/Markup/BlazorApp/BlazorApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Project/Markup/BlazorApp/BlazorApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-3ij3p7wwc4
+[C:/Project/Markup/BlazorApp/BlazorApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3dsd3z3yec
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-wk4bcz64v1
+[C:/Project/Markup/BlazorApp/BlazorApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7cxxmz0cwl
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/setoshin/Downloads/BlazorApp/BlazorApp/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+[C:/Project/Markup/BlazorApp/BlazorApp/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

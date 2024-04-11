@@ -1,17 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "EAZn9QDcpmco0AKEAU9dj6A03poRoD0Ymt6MKr7rvg6xG4Jt/iTFb1v6Bgd5L1hqVbyuN+kuMZ463Jzljy1X2Q==",
+  "dgSpecHash": "X4dzmSgIJymb7eJVVFizekzyjW1/mTC3NkrwfCWQZSYOhhrEV1EI3S9ZUxiR0w4UfD1NzOAw53/0BzvH0roBOQ==",
   "success": true,
-  "projectFilePath": "/Users/setoshin/Downloads/BlazorApp/BlazorApp/BlazorApp.csproj",
+  "projectFilePath": "C:\\Project\\Markup\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
   "expectedPackageFiles": [
-    "/Users/setoshin/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/npgsql/8.0.2/npgsql.8.0.2.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/Users/setoshin/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Users\\inggg\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.4\\microsoft.aspnetcore.components.analyzers.8.0.4.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\inggg\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

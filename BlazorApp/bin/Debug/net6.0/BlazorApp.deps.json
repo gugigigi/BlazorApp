@@ -9,6 +9,7 @@
       "BlazorApp/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.35",
+          "Microsoft.AspNetCore.Components.Analyzers": "8.0.4",
           "Npgsql": "8.0.2"
         },
         "runtime": {
@@ -23,6 +24,7 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Components.Analyzers/8.0.4": {},
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -113,6 +115,13 @@
       "sha512": "sha512-YKRwjVfrG7GYOovlGyQoMvr1/IJdn+7QzNXJxyMh0YfFF5yvDmTYaJOVYWsckreNjGsGSEtrMTpnzxTUq/tZQw==",
       "path": "dapper/2.1.35",
       "hashPath": "dapper.2.1.35.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/8.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kEvEOOkgN8uLjP2PMR481yxSjUsyGLaehHSD3HWjboNsXA5++7Hxn83LRdVri9/0rlY2zS/dP9oGHZpgxYu2iQ==",
+      "path": "microsoft.aspnetcore.components.analyzers/8.0.4",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.8.0.4.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
       "type": "package",

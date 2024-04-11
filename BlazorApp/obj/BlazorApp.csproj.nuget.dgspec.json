@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/setoshin/Downloads/BlazorApp/BlazorApp/BlazorApp.csproj": {}
+    "C:\\Project\\Markup\\BlazorApp\\BlazorApp\\BlazorApp.csproj": {}
   },
   "projects": {
-    "/Users/setoshin/Downloads/BlazorApp/BlazorApp/BlazorApp.csproj": {
+    "C:\\Project\\Markup\\BlazorApp\\BlazorApp\\BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/setoshin/Downloads/BlazorApp/BlazorApp/BlazorApp.csproj",
+        "projectUniqueName": "C:\\Project\\Markup\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "/Users/setoshin/Downloads/BlazorApp/BlazorApp/BlazorApp.csproj",
-        "packagesPath": "/Users/setoshin/.nuget/packages/",
-        "outputPath": "/Users/setoshin/Downloads/BlazorApp/BlazorApp/obj/",
+        "projectPath": "C:\\Project\\Markup\\BlazorApp\\BlazorApp\\BlazorApp.csproj",
+        "packagesPath": "C:\\Users\\inggg\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\Markup\\BlazorApp\\BlazorApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/setoshin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\inggg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +49,10 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
+            "Microsoft.AspNetCore.Components.Analyzers": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -71,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
