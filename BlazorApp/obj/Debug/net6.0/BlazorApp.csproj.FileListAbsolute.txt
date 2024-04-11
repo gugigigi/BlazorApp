@@ -122,3 +122,4 @@ C:\Project\Markup\BlazorApp\BlazorApp\obj\Debug\net6.0\refint\BlazorApp.dll
 C:\Project\Markup\BlazorApp\BlazorApp\obj\Debug\net6.0\BlazorApp.pdb
 C:\Project\Markup\BlazorApp\BlazorApp\obj\Debug\net6.0\BlazorApp.genruntimeconfig.cache
 C:\Project\Markup\BlazorApp\BlazorApp\obj\Debug\net6.0\ref\BlazorApp.dll
+C:\Project\Markup\BlazorApp\BlazorApp\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -1,15 +1,17 @@
 ﻿@page "/"
+@using System.Diagnostics
 
-@inject NavigationManager navMgr
 @inject Person person
+@inject NavigationManager Navi
 
 <div class="container-field">
-    <h2>名刺印刷アプリ</h2>
+    <h2>印刷アプリ</h2>
     <div class="row">
         <div class="col-sm-6">
             <form>
                 <div class="form-group">
                     <label for="">会社名</label>
+                    <textarea class="form-control" rows="3" @bind="@person.P0" />
                 </div>
                 <div class="form-group row">
                     <label class="col-12" for="">氏名(ふりがな)</label>
@@ -34,13 +36,14 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="">連絡先</label>
+                    <label for="">連絡先：</label>
                     <div class="col-6">
+                        <textarea class="form-control" rows="6" @bind="@person.P5" />
                     </div>
                 </div>
                 <div class="float-right">
                     <button class="btn btn-primary" style="width:100px;margin-right:15px"
-                        @onclick="OnPrint">印　刷</button>
+                        @onclick="NavigateToCounterComponent">印　刷</button>
                 </div>
             </form>
         </div>
@@ -49,7 +52,6 @@
                 <tbody>
                     <tr>
                         <td id="origin">
-                            <img class="logo" alt="" src="logo.png" />
                             <p class="section" style="@person.GetSectionStyle()">@person.P0_2</p>
                             <div class="Name" style="@person.GetNameStyle()">
                                 <div style="float:left; margin-right:5mm">
@@ -74,19 +76,38 @@
 
 
 @code {
+
+    @* protected NavigationManager NavManager { get; set; } *@
+    private int Value { get; set; }
+
     protected override void OnInitialized()
     {
-        person.P1 = @"テスト1";
-        person.P2 = @"テスト2";
-        person.P3 = @"テスト3";
-        person.P4 = @"テスト4";
-        person.P5 = @"テスト5";
+        Navi.LocationChanged += HandleLocationChanged;
+
+        person.P1 = @"会社名";
+        person.P1 = @"氏名(ふりがな)";
+        person.P2 = @"氏名(ふりがな)";
+        person.P3 = @"氏名(漢字)";
+        person.P4 = @"氏名(漢字)";
+        person.P5 = @"連絡先";
+    }
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        //Logger.LogInformation("URL of new location: {Location}", e.Location);
+        Console.WriteLine($"{DateTime.Now}:URL of new location: {Navi.Uri}", e.Location);
+    }
+
+    public void Dispose()
+    {
+        Navi.LocationChanged -= HandleLocationChanged;
     }
 
     // TODO プリント画面に遷移
-    void OnPrint()
+    private void NavigateToCounterComponent()
     {
-        navMgr.NavigateTo("/print");
+        //Debug.WriteLine($"{DateTime.Now}:URL of new location: {Navi("/print")}");
+        Navi.NavigateTo("/print",true,false);
     }
 
     // TODO 帳票情報をサーバーにアップロードする画面に遷移

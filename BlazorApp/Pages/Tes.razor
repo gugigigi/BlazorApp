@@ -1,0 +1,15 @@
+﻿@page "/tes"
+@inject Person person
+@inject NavigationManager navMgr
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Print</PageTitle>
+
+
+@code {
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		// 印刷ダイアログ
+		await JSRuntime.InvokeAsync<bool>("printwindow", null);
+	}
+}

@@ -11,8 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\PrintTop.razor" />
+    <Content Remove="Pages\Tes.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Analyzers" Version="8.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Npgsql" Version="8.0.2" />
   </ItemGroup>
 

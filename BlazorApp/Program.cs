@@ -16,7 +16,7 @@ SharedData.ConnectionString = configuration.GetSection("ConnectionStrings")["Pos
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddScoped<Person>();
+builder.Services.AddSingleton<Person>();
 
 var app = builder.Build();
 

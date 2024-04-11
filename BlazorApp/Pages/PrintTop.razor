@@ -1,0 +1,104 @@
+﻿@page "/printtop"
+@inject Person person
+@inject NavigationManager Navi
+
+<div class="container-field">
+    <h2>印刷アプリ</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="form-group">
+                    <label for="">会社名</label>
+                    <textarea class="form-control" rows="3" @bind="@person.P0" />
+                </div>
+                <div class="form-group row">
+                    <label class="col-12" for="">氏名(ふりがな)</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P1"
+                               @bind-value:event="oninput"></input>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P2"
+                               @bind-value:event="oninput"></input>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12" for="">氏名(漢字)</label>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P3"
+                               @bind-value:event="oninput"></input>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" @bind-value="@person.P4"
+                               @bind-value:event="oninput"></input>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="">連絡先：</label>
+                    <div class="col-6">
+                        <textarea class="form-control" rows="6" @bind="@person.P5" />
+                    </div>
+                </div>
+                <div class="float-right">
+                    <button class="btn btn-primary" style="width:100px;margin-right:15px"
+                            @onclick="OnPrint">
+                        印　刷
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <table class="preview">
+                <tbody>
+                    <tr>
+                        <td id="origin">
+                            <p class="section" style="@person.GetSectionStyle()">@person.P0_2</p>
+                            <div class="Name" style="@person.GetNameStyle()">
+                                <div style="float:left; margin-right:5mm">
+                                    <p class="FirstKana">@person.P1</p>
+                                    <p class="KanaSpan" />
+                                    <p class="FirstName">@person.P3</p>
+                                </div>
+                                <div style="float:left">
+                                    <p class="LastKana">@person.P2</p>
+                                    <p class="KanaSpan" />
+                                    <p class="LastName">@person.P4</p>
+                                </div>
+                            </div>
+                            <p class="address">@person.P5_2</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@code {
+
+    [Inject]
+    protected NavigationManager NavManager { get; set; }
+
+    protected override void OnInitialized()
+    {
+        person.P1 = @"会社名";
+        person.P1 = @"氏名(ふりがな)";
+        person.P2 = @"氏名(ふりがな)";
+        person.P3 = @"氏名(漢字)";
+        person.P4 = @"氏名(漢字)";
+        person.P5 = @"連絡先";
+    }
+
+    // TODO プリント画面に遷移
+    void OnPrint()
+    {
+        NavManager.NavigateTo("");
+    }
+
+    // TODO 帳票情報をサーバーにアップロードする画面に遷移
+    //void RegisterEntryInfo()
+    // {
+    // navMgr.NavigateTo("/Register");
+    // }
+}
